@@ -9,8 +9,10 @@ h1 {
 }
 
 .button {
-    padding: 15px 32px;
-
+    background-color: darkkhaki;
+    color:white;
+    border:2px solid white;
+    border-radius: 10%;
 }
 
 
