@@ -1,4 +1,24 @@
-//Learning Git Hub
-console.log("Learning Github")
+function isColor(strColor){
+    var s = new Option().style;
+    s.color = strColor;
+    return s.color !== '';
+  }
+  
 
-//in branch 1
+document.addEventListener("DOMContentLoaded", () => {
+
+    document.querySelector("#submitButton").addEventListener("click", () => {
+
+        let colorText = document.querySelector("#color");
+
+        if (!colorText.value || !isColor(colorText.value)) {
+            alert("Error! Please submit a valid color name!");
+            return;
+        }
+        
+        document.body.style.backgroundColor = colorText.value;
+        colorText.value = "";
+
+    });
+
+});
